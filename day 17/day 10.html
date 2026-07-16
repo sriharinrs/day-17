@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 10</title>
+</head>
+<body>
+    <script>
+// ---------- Task 1 ----------
+
+console.log("Task 1");
+for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+
+// ---------- Task 2 ----------
+
+
+console.log("\nTask 2");
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+}
+
+// ---------- Task 3 ----------
+
+
+console.log("\nTask 3");
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+
+// ---------- Task 4 ----------
+
+
+console.log("\nTask 4");
+let num = 1;
+
+while (num <= 5) {
+    console.log(num);
+    num++;
+}
+
+// ---------- Task 5 ----------
+
+
+console.log("\nTask 5");
+let count = 1;
+
+do {
+    console.log(count);
+    count++;
+} while (count <= 5);
+
+// ---------- Task 6 ----------
+
+
+console.log("\nTask 6");
+for (let i = 1; i <= 10; i++) {
+    console.log("5 x " + i + " = " + (5 * i));
+}
+
+// ---------- Task 7 ----------
+
+
+console.log("\nTask 7");
+
+let names = ["Arun", "Kumar", "Rahul", "Priya", "Meena"];
+
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
+
+// ---------- Task 8 ----------
+
+
+console.log("\nTask 8");
+
+let sum = 0;
+
+for (let i = 1; i <= 10; i++) {
+    sum = sum + i;
+}
+
+console.log("Sum =", sum);
+
+// ---------- Task 9 ----------
+
+
+console.log("\nTask 9");
+
+for (let i = 1; i <= 20; i++) {
+    if (i % 2 !== 0) {
+        console.log(i);
+    }
+}
+
+// ---------- Task 10 ----------
+
+
+console.log("\nTask 10");
+
+let correctUsername = "admin";
+let correctPassword = "12345";
+
+
+let loginAttempts = [
+    { username: "user", password: "1111" },
+    { username: "admin", password: "2222" },
+    { username: "admin", password: "12345" }
+];
+
+let success = false;
+
+for (let i = 0; i < 3; i++) {
+
+    if (
+        loginAttempts[i].username === correctUsername &&
+        loginAttempts[i].password === correctPassword
+    ) {
+        console.log("Login Successful");
+        success = true;
+        break;
+    } else {
+        console.log("Attempt " + (i + 1) + " Failed");
+    }
+}
+
+if (!success) {
+    console.log("System Locked");
+} 
+    </script>
+</body>
+</html>

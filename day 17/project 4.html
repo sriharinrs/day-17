@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+</head>
+<body>
+    <script>
+
+let correctUsername = "admin";
+let correctPassword = "12345";
+
+let attempts = [
+    { username: "user", password: "1111" },
+    { username: "admin", password: "2222" },
+    { username: "admin", password: "12345" }
+];
+
+let loginSuccess = false;
+
+for (let i = 0; i < 3; i++) {
+
+    if (
+        attempts[i].username === correctUsername &&
+        attempts[i].password === correctPassword
+    ) {
+        console.log("Login Successful");
+        loginSuccess = true;
+        break;
+    } else {
+        console.log("Attempt " + (i + 1) + " Failed");
+    }
+}
+
+if (!loginSuccess) {
+    console.log("System Locked");
+}
+    </script>
+</body>
+</html>
